@@ -54,8 +54,8 @@ const Contact = () => {
               <CardContent className="p-6">
                 <Phone className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-800 mb-2">Call Us</h3>
-                <p className="text-emerald-600 font-medium">+91-9876543210</p>
-                <p className="text-emerald-600 font-medium">+91-9876543211</p>
+                <a href="tel:+919876543210" className="text-emerald-600 font-medium hover:underline block">+91-9876543210</a>
+                <a href="tel:+919876543211" className="text-emerald-600 font-medium hover:underline block">+91-9876543211</a>
               </CardContent>
             </Card>
 
@@ -63,8 +63,8 @@ const Contact = () => {
               <CardContent className="p-6">
                 <Mail className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-800 mb-2">Email Us</h3>
-                <p className="text-emerald-600 font-medium text-sm">info@satyamschool.in</p>
-                <p className="text-emerald-600 font-medium text-sm">admission@satyamschool.in</p>
+                <a href="mailto:info@satyamschool.in" className="text-emerald-600 font-medium text-sm hover:underline block">info@satyamschool.in</a>
+                <a href="mailto:admission@satyamschool.in" className="text-emerald-600 font-medium text-sm hover:underline block">admission@satyamschool.in</a>
               </CardContent>
             </Card>
 
@@ -119,9 +119,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Phone Numbers</h4>
-                      <p className="text-gray-600">Office: +91-9876543210</p>
-                      <p className="text-gray-600">Admission: +91-9876543211</p>
-                      <p className="text-gray-600">Principal: +91-9876543212</p>
+                      <p className="text-gray-600">Office: <a href="tel:+919876543210" className="text-emerald-600 hover:underline">+91-9876543210</a></p>
+                      <p className="text-gray-600">Admission: <a href="tel:+919876543211" className="text-emerald-600 hover:underline">+91-9876543211</a></p>
+                      <p className="text-gray-600">Principal: <a href="tel:+919876543212" className="text-emerald-600 hover:underline">+91-9876543212</a></p>
                     </div>
                   </div>
                   
@@ -131,9 +131,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Email Addresses</h4>
-                      <p className="text-gray-600">General: info@satyamschool.in</p>
-                      <p className="text-gray-600">Admissions: admission@satyamschool.in</p>
-                      <p className="text-gray-600">Principal: principal@satyamschool.in</p>
+                      <p className="text-gray-600">General: <a href="mailto:info@satyamschool.in" className="text-emerald-600 hover:underline">info@satyamschool.in</a></p>
+                      <p className="text-gray-600">Admissions: <a href="mailto:admission@satyamschool.in" className="text-emerald-600 hover:underline">admission@satyamschool.in</a></p>
+                      <p className="text-gray-600">Principal: <a href="mailto:principal@satyamschool.in" className="text-emerald-600 hover:underline">principal@satyamschool.in</a></p>
                     </div>
                   </div>
                   

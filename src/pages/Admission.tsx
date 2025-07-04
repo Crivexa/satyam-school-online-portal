@@ -99,7 +99,7 @@ const Admission = () => {
             <p className="text-sm text-gray-500 mb-6">
               Application ID: ADM-2024-{Math.random().toString(36).substr(2, 9).toUpperCase()}
             </p>
-            <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-700">
+            <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
               <Link to="/">Back to Home</Link>
             </Button>
           </CardContent>
@@ -224,6 +224,8 @@ const Admission = () => {
                             <SelectItem value="8">Class 8</SelectItem>
                             <SelectItem value="9">Class 9</SelectItem>
                             <SelectItem value="10">Class 10</SelectItem>
+                            <SelectItem value="11">Class 11</SelectItem>
+                            <SelectItem value="12">Class 12</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -382,7 +384,7 @@ const Admission = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 py-3 text-lg" disabled={loading}>
+                  <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 py-3 text-lg text-white" disabled={loading}>
                     {loading ? 'Processing Application...' : 'Submit Application & Proceed to Payment'}
                   </Button>
                 </form>
@@ -416,7 +418,7 @@ const Admission = () => {
                     </div>
                   </div>
                 </div>
-                <Button onClick={handlePayment} className="w-full bg-emerald-600 hover:bg-emerald-700 py-3" disabled={loading}>
+                <Button onClick={handlePayment} className="w-full bg-emerald-600 hover:bg-emerald-700 py-3 text-white" disabled={loading}>
                   {loading ? 'Processing Payment...' : 'Pay Now with Razorpay'}
                 </Button>
                 <p className="text-xs text-gray-500 text-center">
